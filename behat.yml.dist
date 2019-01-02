@@ -14,7 +14,7 @@ default:
             kernel:
                 env: test
                 debug: true
-                class: Tests\Acme\SyliusExamplePlugin\Application\Kernel
+                class: Tests\StefanDoorn\SyliusRecaptchaPlugin\Application\Kernel
                 path: tests/Application/Kernel.php
                 bootstrap: ~
 
