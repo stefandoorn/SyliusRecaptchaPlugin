@@ -14,3 +14,7 @@ parameters:
 sylius_shop:
     product_grid:
         include_all_descendants: true
+
+ewz_recaptcha:
+    public_key: "%recaptcha_public%"
+    private_key: "%recaptcha_private%"
