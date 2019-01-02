@@ -8,6 +8,8 @@ imports:
 
 parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
+    recaptcha_public: 'test'
+    recaptcha_private: 'test'
 
 sylius_shop:
     product_grid:
