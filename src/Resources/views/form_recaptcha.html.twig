@@ -1,0 +1,10 @@
+{% form_theme settings.form '@EWZRecaptcha/Form/ewz_recaptcha_widget.html.twig' %}
+
+{{ form_errors(settings.form.recaptcha) }}
+{{ form_widget(settings.form.recaptcha, { 'attr': {
+    'options' : {
+        'theme': 'light',
+        'type': 'image',
+        'size': 'normal'
+    },
+} }) }}
