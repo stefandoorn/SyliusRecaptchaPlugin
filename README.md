@@ -6,7 +6,7 @@
 
 ## Features
 
-* Add Recaptcha to Contact Form to prevent spam
+* Add Recaptcha to Contact Form and Registration Page to prevent spam
 
 ## Installation
 

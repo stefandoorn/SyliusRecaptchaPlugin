@@ -5,9 +5,18 @@
             <tag name="form.type_extension" extended-type="Sylius\Bundle\CoreBundle\Form\Type\ContactType" />
         </service>
 
+        <service id="stefandoorn.sylius.recaptcha.form.extension.registration" class="StefanDoorn\SyliusRecaptchaPlugin\Form\Extension\CustomerRegistrationFormExtension">
+            <tag name="form.type_extension" extended-type="Sylius\Bundle\CoreBundle\Form\Type\Customer\CustomerRegistrationType" />
+        </service>
+
         <service id="stefandoorn.sylius.recaptcha.block_event_listener.shop.contact.request.form" class="Sylius\Bundle\UiBundle\Block\BlockEventListener">
             <argument>@SyliusRecaptchaPlugin/form_recaptcha.html.twig</argument>
             <tag name="kernel.event_listener" event="sonata.block.event.sylius.shop.contact.request.form" method="onBlockEvent" />
+        </service>
+
+        <service id="stefandoorn.sylius.recaptcha.block_event_listener.shop.register.form" class="Sylius\Bundle\UiBundle\Block\BlockEventListener">
+            <argument>@SyliusRecaptchaPlugin/form_recaptcha.html.twig</argument>
+            <tag name="kernel.event_listener" event="sonata.block.event.sylius.shop.register.form" method="onBlockEvent" />
         </service>
     </services>
 </container>
