@@ -29,8 +29,8 @@ class CustomerRegistrationFormExtension extends AbstractTypeExtension
         ]);
     }
 
-    public function getExtendedType()
+    public static function getExtendedTypes(): iterable
     {
-        return CustomerRegistrationType::class;
+        return [CustomerRegistrationType::class];
     }
 }
