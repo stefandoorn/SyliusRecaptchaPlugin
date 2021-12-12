@@ -27,8 +27,8 @@ final class ContactFormExtension extends AbstractTypeExtension
         ]);
     }
 
-    public function getExtendedType()
+    public static function getExtendedTypes(): iterable
     {
-        return ContactType::class;
+        return [ContactType::class];
     }
 }
